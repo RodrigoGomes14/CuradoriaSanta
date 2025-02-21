@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa, Qualidade e Satisfação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="date"], input[type="tel"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .rating {
+            display: flex;
+            justify-content: space-between;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="URL_DO_LOGO" alt="Logo da Empresa">
+        </div>
+        <h2>Pesquisa, Qualidade e Satisfação</h2>
+        <form>
+            <label for="data">Data da Avaliação:</label>
+            <input type="date" id="data" name="data">
+
+            <label for="nome">Nome:</label>
+            <textarea id="nome" name="nome" rows="2"></textarea>
+
+            <label for="cpf">Carteirinha ou CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="unidade">Unidade de Atendimento:</label>
+            <select id="unidade" name="unidade">
+                <option value="unidade1">UNIDADE 1: Antonio Bento</option>
+                <option value="unidade2">UNIDADE 2: Ana Costa 290</option>
+                <option value="unidade3">UNIDADE 3: Bertioga</option>
+                <option value="unidade4">UNIDADE 4: Presidente Kennedy</option>
+                <option value="unidade5">UNIDADE 5: Conselheiro Nébias 592</option>
+                <option value="unidade6">UNIDADE 6: Guarujá</option>
+                <option value="unidade7">UNIDADE 7: Ana Costa 103</option>
+                <option value="unidade8">UNIDADE 8: Ana Costa 418</option>
+                <option value="unidade9">UNIDADE 9: Litoral Plaza (Equipe Multi)</option>
+                <option value="unidade10">UNIDADE 10: São Vicente</option>
+                <option value="unidade11">UNIDADE 11: Vicente de Carvalho</option>
+                <option value="unidade12">UNIDADE 12: Beneficência Portuguesa</option>
+                <option value="unidade13">UNIDADE 13: Conselheiro Nébias 748 - Pronto Atendimento</option>
+            </select>
+
+            <label for="avaliacao">Como você avaliaria seu atendimento?</label>
+            <div class="rating">
+                <label><input type="radio" name="avaliacao" value="1"> 1</label>
+                <label><input type="radio" name="avaliacao" value="2"> 2</label>
+                <label><input type="radio" name="avaliacao" value="3"> 3</label>
+                <label><input type="radio" name="avaliacao" value="4"> 4</label>
+                <label><input type="radio" name="avaliacao" value="5"> 5</label>
+            </div>
+
+            <label for="motivo">Qual o motivo da sua avaliação?</label>
+            <textarea id="motivo" name="motivo" rows="4"></textarea>
+
+            <label for="sugestao">Teria algo que você gostaria de sugerir? Qual seria a sua sugestão?</label>
+            <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
